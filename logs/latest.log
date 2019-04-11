@@ -1,0 +1,51 @@
+[21:26:46] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[21:26:46] [Server thread/INFO]: Loading properties
+[21:26:46] [Server thread/INFO]: Default game type: SURVIVAL
+[21:26:46] [Server thread/INFO]: Generating keypair
+[21:26:47] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:26:47] [Server thread/INFO]: Using default channel type
+[21:26:48] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-e60fc34 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[21:26:48] [Server thread/INFO]: [GroupManager] Loading GroupManager vPre2.14.1.3 FINAL (Phoenix)
+[21:26:48] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:26:48] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:26:48] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:26:48] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:26:48] [Server thread/INFO]: Preparing level "world"
+[21:26:49] [Server thread/INFO]: Preparing start region for level 0 (Seed: 7168010530075199893)
+[21:26:50] [Server thread/INFO]: Preparing spawn area: 2%
+[21:26:51] [Server thread/INFO]: Preparing spawn area: 58%
+[21:26:52] [Server thread/INFO]: Preparing start region for level 1 (Seed: 7168010530075199893)
+[21:26:53] [Server thread/INFO]: Preparing spawn area: 69%
+[21:26:53] [Server thread/INFO]: Preparing start region for level 2 (Seed: 7168010530075199893)
+[21:26:54] [Server thread/INFO]: [GroupManager] Enabling GroupManager vPre2.14.1.3 FINAL (Phoenix)
+[21:26:54] [Server thread/INFO]: GroupManager - INFO - World Found: world
+[21:26:54] [Server thread/ERROR]: Error occurred while enabling GroupManager vPre2.14.1.3 FINAL (Phoenix) (Is it up to date?)
+java.lang.NoSuchMethodError: org.bukkit.Server.getOnlinePlayers()[Lorg/bukkit/entity/Player;
+	at org.anjocaido.groupmanager.permissions.BukkitPermissions.updateAllPlayers(BukkitPermissions.java:383) ~[?:?]
+	at org.anjocaido.groupmanager.permissions.BukkitPermissions.reset(BukkitPermissions.java:110) ~[?:?]
+	at org.anjocaido.groupmanager.permissions.BukkitPermissions.<init>(BukkitPermissions.java:96) ~[?:?]
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:209) ~[?:?]
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:103) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:329) [craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:402) [craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:367) [craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:328) [craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:412) [craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:373) [craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:328) [craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:248) [craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:522) [craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:26:54] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:26:54] [Server thread/INFO]: Done (6.524s)! For help, type "help" or "?"
+[21:26:54] [pool-3-thread-1/WARN]: [GroupManager] Plugin GroupManager vPre2.14.1.3 FINAL (Phoenix) generated an exception while executing task 2
+java.lang.NoSuchMethodError: org.bukkit.Server.getOnlinePlayers()[Lorg/bukkit/entity/Player;
+	at org.anjocaido.groupmanager.metrics.Metrics.postPlugin(Metrics.java:335) ~[?:?]
+	at org.anjocaido.groupmanager.metrics.Metrics.access$400(Metrics.java:57) ~[?:?]
+	at org.anjocaido.groupmanager.metrics.Metrics$1.run(Metrics.java:223) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:58) ~[craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:52) [craftbukkit-1.12.2.jar:git-Bukkit-e60fc34]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_201]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
